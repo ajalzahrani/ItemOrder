@@ -29,7 +29,7 @@ namespace ItemOrder
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtMinQty = new System.Windows.Forms.TextBox();
@@ -209,6 +209,8 @@ namespace ItemOrder
             this.cmbDurationType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDurationType.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbDurationType.FormattingEnabled = true;
+            this.cmbDurationType.Items.AddRange(new object[] {
+            "Day(s)"});
             this.cmbDurationType.Location = new System.Drawing.Point(216, 99);
             this.cmbDurationType.Name = "cmbDurationType";
             this.cmbDurationType.Size = new System.Drawing.Size(136, 23);
@@ -232,6 +234,7 @@ namespace ItemOrder
             this.txtStockUnit.Name = "txtStockUnit";
             this.txtStockUnit.Size = new System.Drawing.Size(109, 21);
             this.txtStockUnit.TabIndex = 119;
+            this.txtStockUnit.Text = "Each";
             // 
             // groupBox2
             // 
@@ -462,8 +465,8 @@ namespace ItemOrder
             this.dgvOrderListAll.AllowUserToDeleteRows = false;
             this.dgvOrderListAll.AllowUserToResizeColumns = false;
             this.dgvOrderListAll.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Cornsilk;
-            this.dgvOrderListAll.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Cornsilk;
+            this.dgvOrderListAll.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvOrderListAll.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvOrderListAll.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvOrderListAll.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -721,6 +724,8 @@ namespace ItemOrder
             this.txtDoctorname.ReadOnly = true;
             this.txtDoctorname.Size = new System.Drawing.Size(299, 21);
             this.txtDoctorname.TabIndex = 1;
+            this.txtDoctorname.Text = "ABDULRAHMAN ALZAHRANI";
+            this.txtDoctorname.TextChanged += new System.EventHandler(this.txtDoctorname_TextChanged);
             // 
             // label25
             // 
@@ -741,6 +746,8 @@ namespace ItemOrder
             this.txtdoctorcode.ReadOnly = true;
             this.txtdoctorcode.Size = new System.Drawing.Size(109, 21);
             this.txtdoctorcode.TabIndex = 105;
+            this.txtdoctorcode.Text = "66666 ";
+            this.txtdoctorcode.TextChanged += new System.EventHandler(this.txtdoctorcode_TextChanged);
             // 
             // button11
             // 
@@ -831,6 +838,7 @@ namespace ItemOrder
             this.txtItemName.Name = "txtItemName";
             this.txtItemName.Size = new System.Drawing.Size(414, 21);
             this.txtItemName.TabIndex = 2;
+            this.txtItemName.Text = "APPLICATOR COTTON TIP STERILE WOOD PK/2";
             // 
             // txtDuration
             // 
@@ -851,6 +859,7 @@ namespace ItemOrder
             this.button14.TabIndex = 10;
             this.button14.Text = "Add To List";
             this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // button15
             // 
@@ -893,6 +902,7 @@ namespace ItemOrder
             this.txtMaxDispenseQty.Name = "txtMaxDispenseQty";
             this.txtMaxDispenseQty.Size = new System.Drawing.Size(85, 21);
             this.txtMaxDispenseQty.TabIndex = 100824;
+            this.txtMaxDispenseQty.Text = "10";
             // 
             // Form1
             // 
